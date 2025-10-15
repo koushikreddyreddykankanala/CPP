@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+class Animal{
+    public:
+    string name;
+    string food;
+    bool run;
+};
+
+int main() {
+    Animal A1;
+    A1.name = "cat";
+    A1.food = "milk";
+    A1.run = true;
+    
+    Animal A2;
+    A2.name = "horse";
+    A2.food = "grass";
+    A2.run = true;
+    
+    Animal A3;
+    A3.name = "tiger";
+    A3.food = "flesh";
+    A3.run = true;
+    
+    cout << A1.name;
+
+
+    return 0;
+}
