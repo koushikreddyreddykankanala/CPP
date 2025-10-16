@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+enum Mobile{
+    SAMSUNG = 25,APPLE,ONEPLUS
+};
+int main() {
+    Mobile S = SAMSUNG;
+    if (S == SAMSUNG){
+    cout << SAMSUNG;
+    }
+    
+    return 0;
+}
