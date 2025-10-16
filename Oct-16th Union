@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+union Student{
+    char name[20];
+    int age;
+};
+int main() {
+    Student S1;
+    strcpy(S1.name, "koushik");
+    S1.age = 19;
+    
+    Student S2;
+    strcpy(S1.name, "sathvik");
+    S2.age = 17;
+    
+    cout << S2.age;
+    
+    return 0;
+}
