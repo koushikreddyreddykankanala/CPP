@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+struct Student{
+    string name;
+    int rollno;
+    int age;
+};
+int main() {
+     Student S1;
+     S1.name = "Koushik";
+     S1.rollno = 21;
+     S1.age = 19;
+    
+    
+    cout << S1.age;
+    
+    return 0;
+}
