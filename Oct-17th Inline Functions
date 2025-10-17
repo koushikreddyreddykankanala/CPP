@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Math{
+    public :
+    int a,b;
+    
+    void sum(int x,int y){
+        cout << x + y << endl;
+    }
+    
+    inline void sumOfThreeNumbers(int x, int y, int z);
+};
+
+inline void Math :: sumOfThreeNumbers(int x, int y, int z){
+    cout << x + y + z;
+}
+int main() {
+    Math m;
+    m.sum(2,3);
+    
+    m.sumOfThreeNumbers(1,2,3);
+        
+    return 0;
+}
