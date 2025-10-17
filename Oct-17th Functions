@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+// void greet(){
+    
+//     cout << "Hello, Good Morning" << endl;
+//     cout << "Hello, Good Morning" << endl;
+//     cout << "Hello, Good Morning" << endl;
+//     cout << "Hello, Good Morning" << endl;
+//  }
+
+
+
+//   int mul(int a, int b){
+//       int mulOfNumbers = (a*b);
+//       return mulOfNumbers;
+//   }
+
+int main() {
+    
+        // greet();
+        // greet();
+        // greet();
+        
+        
+        
+        // int result = mul(3, 4);    
+        // cout << result; 
+        
+    return 0;
+}
