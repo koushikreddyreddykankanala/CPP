@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    // string s = "koushik reddy";
+    // string s("koushik reddy");
+    // s = "koushik reddy";
+    
+    //string s = "koushik reddy";
+    // getline(cin,s);
+    
+    // cout << s;
+    
+    // int len = s.lengeth();
+    
+    // for(int i = 0; i < 6; i++){
+    //     cout << s[i] << " ";
+    // }
+    
+    // string s2 ="koushik";
+    // cout << s+ " " << s2; 
+    
+    // s2.append("Hello");
+    
+    string s = "koushik reddy";
+    
+    // string temp = s.substr(0,10);  // sub str is used for small size 
+    
+    // cout << temp;
+    // cout << endl;
+    // temp.push_back('d');  // push back adds the element in the last 
+    // temp.pop_back();     // pop back removes the last element
+    
+    // cout << temp;
+    
+    for(auto& x : s){       // auto is the return type 
+        cout << x << " ";   // instead of auto we can use other data types (return type) also like char,float,int anything
+                            // instead of x we can use any alphabet
+    }
+    
+    
+    return 0;
+}
