@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 10;
+    int arr[10] = {1,1,2,3,1,2,2,3,4,4};
+    int freq[5] = {0};
+    
+    for(int i = 0; i < n; i++)freq[arr[i]]++;
+        
+        int target = 2;
+        cout << freq[target];
+    
+    return 0;
+}
