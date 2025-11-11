@@ -16,6 +16,10 @@ class student{
     //     age = ageOfStudent;
     // }
     
+    student(string nameOfstudent) {
+        name = nameOfstudent;
+    }
+    
     student(int ageOfstudent,string nameOfstudent = "unknown"){
         age = ageOfstudent;
         name = nameOfstudent;
@@ -29,10 +33,11 @@ int main() {
     // cout << s1.age;
     
     student s1(19,"Koushik");
-    // student s2("Shiva");
+    student s2("Shiva");
     student s3(21);
     
-    cout << s1.age << " " << s3.age;
+    cout << s1.age << " " << s3.age << endl;
+    cout << s1.name << " " << s2.name;
     
     return 0;
 }
