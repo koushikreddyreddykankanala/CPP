@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class student{
+    public:
+    int age;
+    string name;
+    
+    // //Default constructor
+    // student(){
+    //     age = 12;
+    // }
+    
+    // //Parameterized constructor
+    // student(int ageOfStudent){
+    //     age = ageOfStudent;
+    // }
+    
+    student(int ageOfstudent,string nameOfstudent = "unknown"){
+        age = ageOfstudent;
+        name = nameOfstudent;
+    }
+};
+
+int main() {
+    
+    // student s1(14);
+    // //student s1
+    // cout << s1.age;
+    
+    student s1(19,"Koushik");
+    // student s2("Shiva");
+    student s3(21);
+    
+    cout << s1.age << " " << s3.age;
+    
+    return 0;
+}
