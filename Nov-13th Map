@@ -15,7 +15,7 @@ int main() {
         int key = x.first;
         int value = x.second;
         
-        cout << key << " occured at" << value << " th index" << endl;
+        cout << key << " occured at " << value << "th index" << endl;
     }
     
     return 0;
