@@ -1,0 +1,80 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class base {
+    public:
+    int x;
+    
+    protected:
+    int y;
+    
+    private:
+    int z;
+    
+    // void setter(int val){
+    //     z = 30;
+    // }
+    
+    // int getter(){
+    //     return z;
+    // }
+    
+}; 
+
+class publicChild : public base{
+    public :
+    void show(){
+        x = 10;  // No issue
+        y = 20;  // No issue
+        // z = 30;  // Issues will occur
+    }
+};
+
+class protectedChild : protected base {
+    public:
+    void show(){
+        x = 10;  // No Issue but this 'x' will become protected now
+        y = 20;  // No Issues , 'y' will remain Protective
+        // z = 30;  // Issues will Occur
+    }
+};
+
+class privateChild : private base {
+    public :
+    void show(){
+        x = 10;  // No Issues but 'x' will become private 
+        y = 20;  // No Issues but 'y' will become private
+        // z = 30;  // Issues will occur
+    }
+};
+
+class parentClass {
+    
+    public:
+    parentClass(){
+        cout << "parentClass Constructor called" << endl;
+    }
+    
+    ~parentClass(){
+        cout << "parentClass Destructor called" << endl;;
+    }
+};
+
+class childClass : public parentClass{
+    
+    public:
+    childClass(){
+        cout << "childClass Constructor called" << endl;
+    }
+    
+    ~childClass(){
+        cout << "childClass Destructor called" << endl;
+    }
+};
+
+int main() {
+    
+    childClass ch;
+    
+    return 0;
+}
