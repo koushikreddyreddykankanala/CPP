@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+//Method Overriding
+class animal {
+    public :
+    void speak() {
+        cout << "Hello there!!" << endl;
+    }
+};
+
+class dog : public animal {
+    public :
+    void speak(){
+        cout << "Bark!!!" << endl;
+    }
+};
+
+int main() {
+    
+    dog d;
+    d.speak(); // Over riding will happen to speak function
+    
+    animal a;
+    a.speak(); // No Method Overriding
+    
+    return 0;
+}
