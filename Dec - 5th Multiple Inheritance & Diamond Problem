@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class parentClassA{
+    public : 
+    void show() {
+        cout << "Hi There !!!" << endl;
+    }
+};
+
+class parentClassB{
+    public :
+    void show(){
+        cout << "Hello Good Morning" << endl;
+    }
+};
+
+class child : public parentClassA , public parentClassB{
+    
+};
+
+//Diamond Problem
+class superParent{
+    public : 
+    void show() {
+        cout << "Iam superParent" << endl;
+    }
+};
+
+//We Inherit virtually from parent class
+class parentA : virtual public superParent {
+    
+};
+
+//We Inherit virtually from parent class
+class parentB : virtual public superParent {
+    
+};
+
+class childD : public parentA, public parentB {
+    
+};
+
+int main() {
+    
+    child ch;
+    ch.parentClassB::show();
+    ch.parentClassA::show();
+    
+    //Diamond problem
+    childD d;
+    d.show();
+    
+    return 0;
+}
